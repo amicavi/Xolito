@@ -1,0 +1,23 @@
+.main-description {
+	letter-spacing: 1px;
+}
+
+.hero-container {
+	border-bottom: 1px solid black;
+}
+
+#search_button {
+	border: 1px solid black;
+}
+
+.border , .border-bottom , .border-top{
+	border-color: #999999;
+}
+
+hr {
+	height: .5px;
+	color: #999999;
+	background-color: #999999;
+	border: none;
+}
+

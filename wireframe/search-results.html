@@ -1,0 +1,75 @@
+<html>
+<head>
+	<title>Xolito</title>
+	<meta charset="UTF-8">
+	<link href="http://d2v52k3cl9vedd.cloudfront.net/basscss/7.0.4/basscss.min.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- HERO & NAV -->
+    <header class="clearfix border-bottom bg-silver hero-container">
+        <nav class="clearfix align-top mt0">
+            <ul class="list-reset">
+                <li class="h2 regular inline-block ml4 mt1 bold left"><a href="#" class="btn">Xolito</a></li>
+                <li class="h5 inline-block right mt1 px1"><a href="#" class="btn">Inicia sesión</a></li>
+                <li class="h5 inline-block right mt1 py1">|</li>
+                <li class="h5 inline-block right mt1 mr1"><a href="#" class="btn">Busca un cuidador</a></li>
+            </ul>
+        </nav>
+    </header>
+
+<!-- MAIN SECTION -->
+    <section class="container col-10 border flex flex-column">
+    	<div>
+    		<p class="h5 mt3 p1">Encontramos 123 cuidadores que concuerdan con tu criterio de búsqueda, modifica los filtros para obtener resultados diferentes.</p>
+    	</div>
+		<!-- FILTER SIDEBAR -->
+		<div class="container col-12 border">
+			<div class="container col-3 left border">
+				<form class="m3 flex flex-column">
+					<p>Búsqueda</p>
+					<label class="h4">Desde:</label>
+    				<input type="date" id="from_date" class="field not-rounded">
+    				<br>
+	                <label class="h4">Hasta:</label>
+                	<input type="date" id="until_date" class="field not-rounded">
+                	<br>
+	                <label class="h4">En dónde:</label>
+                	<input type="search" id="place" class="field not-rounded" placeholder="Ciudad o C.P.">
+                	<br>
+                	<label class="h4">Rango de precio:</label>
+                	<div class="h6 m0 py1">
+	                	<p class="left m0">$100</p>
+	                	<p class="right right-align m0">$500</p>
+                	</div>
+                	<input type="range" id="price" class="range-input" min="100" max="500">
+                	<br>
+                	<label class="h4">Tamaño de tu perro:</label>
+                	<div class="inline-block">
+                		<input type="checkbox" id="small" value="chico">
+                		<label class="h6">Chico (&lt;5kg)</label>
+                	</div>
+                	<div class="inline-block">
+                		<input type="checkbox" id="medium" value="mediano">
+                		<label class="h6">Mediano (&lt;5kg)</label>
+                	</div>
+                	<div class="inline-block">
+                		<input type="checkbox" id="big" value="grande">
+                		<label class="h6">Grande (&lt;5kg)</label>
+                	</div>
+                	<br>
+                	<input id="search_button" type="submit" value="Buscar" class="black btn btn-primary center bg-silver not-rounded border">
+				</form>
+			</div>
+
+			<!-- MAP & RESULTS -->
+			<div>
+				<div></div>
+				<div></div>
+				<div></div>
+			</div>
+		</div>
+    </section>
+
+</body>
+</html>
