@@ -3,6 +3,7 @@
 	<title>Xolito</title>
 	<meta charset="UTF-8">
 	<link href="http://d2v52k3cl9vedd.cloudfront.net/basscss/7.0.4/basscss.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
 
@@ -19,54 +20,73 @@
     </header>
 
 <!-- MAIN SECTION -->
-    <section class="container col-10 border flex flex-column">
-    	<div>
-    		<p class="h5 mt3 p1">Encontramos 123 cuidadores que concuerdan con tu criterio de búsqueda, modifica los filtros para obtener resultados diferentes.</p>
+    <section class="container col-8 flex flex-column">
+    	<div class="h5 mt3 p1">
+    		<p class="mt1">Encontramos 123 cuidadores que concuerdan con tu criterio de búsqueda, modifica los filtros para obtener resultados diferentes.</p>
     	</div>
 		<!-- FILTER SIDEBAR -->
-		<div class="container col-12 border">
-			<div class="container col-3 left border">
-				<form class="m3 flex flex-column">
-					<p>Búsqueda</p>
-					<label class="h4">Desde:</label>
-    				<input type="date" id="from_date" class="field not-rounded">
+		<div class="container col-12 flex flex-start">
+			<div class=" col-3 left border">
+				<form class="m1 flex flex-column">
+					<p class="h3">Búsqueda</p>
+					<label class="h4 label">Desde:</label>
+    				<input type="date" id="from_date" class="field input[type=time] not-rounded">
     				<br>
-	                <label class="h4">Hasta:</label>
+	                <label class="h4 label">Hasta:</label>
                 	<input type="date" id="until_date" class="field not-rounded">
                 	<br>
-	                <label class="h4">En dónde:</label>
+	                <label class="h4 label">En dónde:</label>
                 	<input type="search" id="place" class="field not-rounded" placeholder="Ciudad o C.P.">
                 	<br>
-                	<label class="h4">Rango de precio:</label>
+                	<label class="h4 label">Rango de precio:</label>
                 	<div class="h6 m0 py1">
 	                	<p class="left m0">$100</p>
 	                	<p class="right right-align m0">$500</p>
                 	</div>
                 	<input type="range" id="price" class="range-input" min="100" max="500">
                 	<br>
-                	<label class="h4">Tamaño de tu perro:</label>
-                	<div class="inline-block">
-                		<input type="checkbox" id="small" value="chico">
-                		<label class="h6">Chico (&lt;5kg)</label>
-                	</div>
-                	<div class="inline-block">
-                		<input type="checkbox" id="medium" value="mediano">
-                		<label class="h6">Mediano (&lt;5kg)</label>
-                	</div>
-                	<div class="inline-block">
-                		<input type="checkbox" id="big" value="grande">
-                		<label class="h6">Grande (&lt;5kg)</label>
-                	</div>
+                	<label class="h4 label">Tamaño de tu perro:</label>	
+            		<label class="h6 label"><input type="checkbox" id="small" value="chico" class="field-dark">Chico (&lt;5kg)</label>
+            		<label class="h6 label"><input type="checkbox" id="medium" value="mediano" class="circle-input p1 border bg-silver muted circle" >Mediano (&lt;5kg)</label>
+            		<label class="h6 label"><input type="checkbox" id="big" value="grande">Grande (&lt;5kg)</label>
                 	<br>
                 	<input id="search_button" type="submit" value="Buscar" class="black btn btn-primary center bg-silver not-rounded border">
 				</form>
 			</div>
 
-			<!-- MAP & RESULTS -->
-			<div>
-				<div></div>
-				<div></div>
-				<div></div>
+			<!-- MAP -->
+			<div class="container col-9 right">
+				<div class="container col-11">
+					<div class="white border bg-silver py4 center">MAPA CON PINES DE LOS CUIDADORES</div>
+					<div class="container col-12 flex flex-justify">
+						<div class="col-4 py1 inline-block"><hr></div>
+						<div class="col-4 h6 inline-block py1 center"><p>Haz click para agrandar el mapa</p></div>
+						<div class="col-4 py1 inline-block"><hr></div>
+				    </div>
+				    <!-- RESULTS -->
+					<div class="border mt2 flex flex-start">
+						<div class="container col-2 p2 inline-block border">
+							<div class="py1">
+								<div class="py3 bg-silver border"></div>
+							</div>
+							<div class="center border">
+								<p class="h4 m0">4.9</p>
+								<p class="h6 m0">18 calificaciones</p>
+							</div>
+						</div>
+						<div class="border col-9 inline-block border">
+							<!-- <div class="border col-12"> -->
+								<div class="h3 px2 py1 right">
+									<p>$230</p>
+								</div>
+								<p class="h4 bold m0">Anna</p>
+								<p class="h6 bold m0">Soy amante de los perros</p>
+								<p class="gray h6 regular m0">Americana, Guadalajara</p>
+								<p class="h6 result-box border">Siempre he vivido con perros toda mi vida, no me imagino un día sin tener un perro a mi lado. Vivo en una casa sin jardín, mis perros siempre salen a jugar con su...</p>
+							<!-- </div> -->
+						</div>
+					</div>
+			    </div>
 			</div>
 		</div>
     </section>

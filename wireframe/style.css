@@ -21,3 +21,12 @@ hr {
 	border: none;
 }
 
+/******** SEARCH RESULT PAGE ********/
+.circle-input {
+    -webkit-appearance: none;
+}
+
+
+.result-box {
+	line-height:14px;
+}
