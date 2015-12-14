@@ -34,3 +34,25 @@ hr {
 .picture-box {
 	height: 29px;
 }
+
+input[type=range]{
+    -webkit-appearance: none;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 2px;
+    background: #aaa;
+    border: none;
+    border-radius: 3px;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    border: solid 1px #aaa;;
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    background: #dddddd;
+    margin-top: -4px;
+}
