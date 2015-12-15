@@ -2,7 +2,7 @@
 <head>
     <title>Xolito</title>
     <meta charset="UTF-8">
-    <link href="http://d2v52k3cl9vedd.cloudfront.net/basscss/7.0.4/basscss.min.css" rel="stylesheet">
+    <link href="basscss.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
@@ -10,33 +10,44 @@
 <!-- This project use Basscss, the Low-level CSS toolkit -->
 
 <!-- HERO & NAV -->
-    <header class="clearfix border-bottom bg-silver hero-container">
+    <header class="clearfix border-bottom bg-silver">
         <nav class="clearfix align-top mt0">
             <ul class="list-reset">
-                <li class="h2 regular inline-block ml4 mt1 bold left"><a href="#" class="btn">Xolito</a></li>
-                <li class="h5 inline-block right mt1 px1"><a href="#" class="btn">Inicia sesión</a></li>
-                <li class="h5 inline-block right mt1 py1">|</li>
-                <li class="h5 inline-block right mt1 mr1"><a href="#" class="btn">Busca un cuidador</a></li>
+                <li class="h2 regular inline-block lg-col-2 sm-col-1 mt1 bold left right-align"><a href="#" class="btn">Xolito</a></li>
+                <li class="h5 inline-block right m1 px1 sm-hide bold">Menu</li>
+                <li class="h5 inline-block right mt1 px1 sm-show"><a href="#" class="btn">Inicia sesión</a></li>
+                <li class="h5 inline-block right mt1 py1 sm-show">|</li>
+                <li class="h5 inline-block right mt1 mr1 sm-show"><a href="#" class="btn">Busca un cuidador</a></li>
             </ul>
         </nav>
-        <div class="clearfix py2">
-            <h1 class="center h2 mt3 regular main-description">Deja que tu mejor amigo se divierta también cuando tú te vas de vacaciones</h1>
-            <p class="center h3 mb4 regular">Encuentra un cuidador para tu siguiente viaje.</p>
+        <div class="container py2">
+            <h1 class="center h2 mt3 regular main-description">Deja que tu mejor amigo se <br class="md-hide">divierta también cuando tú <br class="md-hide">te vas de vacaciones</h1>
+            <br class="md-hide">
+            <p class="center h3 mb4 regular">Encuentra un cuidador para <br class="md-hide">tu siguiente viaje.</p>
         </div>
     </header>
 
 <!-- SEARCH -->
-    <section class="container col-8 mt2">
-        <div class="clearfix">
-            <form clas="clearfix flex mxn2">
-                <label class="h4 px3 mr3 col-3">Desde:</label>
-                <label class="h4 px4 col-3">Hasta:</label>
-                <label class="h4 px4 col-2">En dónde:</label>
-                <br>
-                <input id="from_date" type="date" class="field col-2 ml3 not-rounded">
-                <input id="until_date" type="date" class="field col-2 ml3 not-rounded">
-                <input id="place" type="search" class="field col-3 ml3 not-rounded" placeholder="Ciudad, colonia o C.P.">
-                <input id="search_button" type="submit" value="Buscar" class="black btn btn-primary col-2 bg-silver not-rounded border ml3">
+    <section class="container lg-col-8 md-col-10 sm-col-11 mt2 border">
+        <div class="clearfix col-12 center border">
+            <form>
+                <div class="h4 left-align lg-col-3 sm-col-5 left">
+                    <label>Desde:</label>
+                    <input id="from_date" type="date" class="field col-10 mb1 not-rounded">
+                </div>
+                <div class="h4 left-align lg-col-3 sm-col-5 left">
+                    <label>Hasta:</label>
+                    <input id="until_date" type="date" class="field col-10 mb1 not-rounded">
+                </div>
+                <br class="md-hide">
+                <div class="h4 left-align lg-col-3 md-col-11 sm-col-12 mr1 left">
+                    <label>En dónde:</label>
+                    <input id="place" type="search" class="field col-12 mb1 not-rounded" placeholder="Ciudad, colonia o C.P.">
+                </div>
+                <br class="md-hide">
+                <div class="lg-col-2 md-col-11 sm-col-12 p1 mt2 left">
+                    <input id="search_button" type="submit" value="Buscar" class="black btn btn-primary col-12 bg-silver not-rounded border">
+                </div>                
             </form>
         </div>
     </section>
