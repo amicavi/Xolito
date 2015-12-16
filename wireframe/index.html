@@ -28,28 +28,28 @@
     </header>
 
 <!-- SEARCH -->
-    <section class="container lg-col-8 md-col-10 sm-col-11 mt2 border">
-        <div class="clearfix col-12 center border">
-            <form>
-                <div class="h4 left-align lg-col-3 sm-col-5 left">
-                    <label>Desde:</label>
-                    <input id="from_date" type="date" class="field col-10 mb1 not-rounded">
+    <section class="container lg-col-9 md-col-10 sm-col-11 mt2">
+        <!-- <div class="clearfix col-12 center"> -->
+            <form class="clearfix col-12 center border">
+                <div class="clearfix flex flex-justify col lg-col-4 sm-col-12 border">
+                    <div class="h4 left-align col col-6 px1 flex flex-column">
+                        <label>Desde:</label>
+                        <input id="from_date" type="date" class="field lg-col-12 sm-col-11 mb1 not-rounded">
+                    </div>
+                    <div class="h4 left-align col col-6 px1 flex flex-column">
+                        <label>Hasta:</label>
+                        <input id="until_date" type="date" class="field lg-col-12 sm-col-10 mb1 not-rounded">
+                    </div>
                 </div>
-                <div class="h4 left-align lg-col-3 sm-col-5 left">
-                    <label>Hasta:</label>
-                    <input id="until_date" type="date" class="field col-10 mb1 not-rounded">
-                </div>
-                <br class="md-hide">
-                <div class="h4 left-align lg-col-3 md-col-11 sm-col-12 mr1 left">
+                <div class="h4 left-align col lg-col-4 md-col-11 md-col-9 sm-col-12 px2 mr1 border">
                     <label>En dónde:</label>
-                    <input id="place" type="search" class="field col-12 mb1 not-rounded" placeholder="Ciudad, colonia o C.P.">
+                    <input id="place" type="search" class="field col-12 not-rounded" placeholder="Ciudad, colonia o C.P.">
                 </div>
-                <br class="md-hide">
-                <div class="lg-col-2 md-col-11 sm-col-12 p1 mt2 left">
+                <div class="col lg-col-3 md-col-11 sm-col-12 p2 mt1 border">
                     <input id="search_button" type="submit" value="Buscar" class="black btn btn-primary col-12 bg-silver not-rounded border">
                 </div>                
             </form>
-        </div>
+        <!-- </div> -->
     </section>
 
 <!-- HOW IT WORKS -->
