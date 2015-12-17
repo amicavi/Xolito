@@ -22,7 +22,7 @@
 
 <!-- MAIN SECTION -->
     <section class="container lg-col-8 sm-col-12 flex flex-column mb4">
-    	<div class="h5 mt3 p1">
+    	<div class="h5 mx-auto mt3 p1 lg-col-12 sm-col-11">
     		<p class="mt1">Encontramos 123 cuidadores que concuerdan con tu criterio de búsqueda, modifica los filtros para obtener resultados diferentes.</p>
     	</div>
 <!-- FILTER SIDEBAR -->
@@ -30,28 +30,28 @@
 			<div class="col-3 mr1 left border sm-show">
 				<form class="m1 flex flex-column">
 					<p class="h3">Búsqueda</p>
-					<label class="h4 label">Desde:</label>
-    				<input type="date" id="from_date" class="field input[type=time] not-rounded">
+					<label for="since" class="h4">Desde:</label>
+    				<input type="date" class="field input[type=time] not-rounded">
     				<br>
-	                <label class="h4 label">Hasta:</label>
-                	<input type="date" id="until_date" class="field not-rounded">
+	                <label for="until" class="h4">Hasta:</label>
+                	<input type="date" class="field not-rounded">
                 	<br>
-	                <label class="h4 label">En dónde:</label>
-                	<input type="search" id="place" class="field not-rounded" placeholder="Ciudad o C.P.">
+	                <label for="where" class="h4">En dónde:</label>
+                	<input type="search" class="field not-rounded" placeholder="Ciudad o C.P.">
                 	<br>
-                	<label class="h4 label">Rango de precio:</label>
+                	<label for="price_range" class="h4">Rango de precio:</label>
                 	<div class="h6 m0 py1">
 	                	<p class="left m0">$100</p>
 	                	<p class="right right-align m0">$500</p>
                 	</div>
-                	<input type="range" id="price" min="100" max="500">
+                	<input type="range" min="100" max="500">
                 	<br>
-                	<label class="h4 label">Tamaño de tu perro:</label>	
-            		<label class="h6 label"><input type="checkbox" id="small" value="chico" class="field-dark">Chico (&lt;5kg)</label>
-            		<label class="h6 label"><input type="checkbox" id="medium" value="mediano" class="p1 border bg-silver circle" >Mediano (&lt;5kg)</label>
-            		<label class="h6 label"><input type="checkbox" id="big" value="grande">Grande (&lt;5kg)</label>
+                	<label for="dog_size" class="h4">Tamaño de tu perro:</label>	
+            		<label for="small" class="h6"><input type="checkbox" value="chico" class="field-dark">Chico (&lt;5kg)</label>
+            		<label for="medium" class="h6"><input type="checkbox" value="mediano" class="p1 border bg-silver circle" >Mediano (&lt;5kg)</label>
+            		<label for="big" class="h6"><input type="checkbox" value="grande">Grande (&lt;5kg)</label>
                 	<br>
-                	<input id="search_button" type="submit" value="Buscar" class="black btn btn-primary center bg-silver not-rounded border">
+                	<input type="submit" value="Buscar" class="black btn btn-primary center bg-silver not-rounded border">
 				</form>
 			</div>
 
