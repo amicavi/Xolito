@@ -20,6 +20,11 @@ hr {
 	line-height:14px;
 }
 
+.fix-size {
+  height: 95px;
+  width: 95px
+}
+
 .picture-box {
 	height: 29px;
 }
