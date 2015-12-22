@@ -1,9 +1,9 @@
 <html>
 <head>
-	<title>Xolito</title>
-	<meta charset="UTF-8">
-	<link href="basscss.min.css" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="style.css">
+    <title>Xolito</title>
+    <meta charset="UTF-8">
+    <link href="basscss.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
 
@@ -21,133 +21,133 @@
 
 <!-- MAIN SECTION -->
     <section class="container col-8 flex flex-column mb4">
-    	<div class="h5 mt3 p1">
-    		<p class="mt1">Encontramos 123 cuidadores que concuerdan con tu criterio de búsqueda, modifica los filtros para obtener resultados diferentes.</p>
-    	</div>
+        <div class="h5 mt3 p1">
+            <p class="mt1">Encontramos 123 cuidadores que concuerdan con tu criterio de búsqueda, modifica los filtros para obtener resultados diferentes.</p>
+        </div>
 <!-- FILTER SIDEBAR -->
-		<div class="container col-12 flex flex-start">
-			<div class=" col-3 left border">
-				<form class="m1 flex flex-column">
-					<p class="h3">Búsqueda</p>
-					<label for="since" class="h4">Desde:</label>
-    				<input type="date" id="since" class="field input[type=time] not-rounded">
-    				<br>
-	                <label for="until" class="h4">Hasta:</label>
-                	<input type="date" id="until" class="field not-rounded">
-                	<br>
-	                <label for="where" class="h4">En dónde:</label>
-                	<input type="search" id="where" class="field not-rounded" placeholder="Ciudad o C.P.">
-                	<br>
-                	<label for="price_range" class="h4">Rango de precio:</label>
-                	<div class="h6 m0 py1">
-	                	<p class="left m0">$100</p>
-	                	<p class="right right-align m0">$500</p>
-                	</div>
-                	<input type="range" id="price_range" min="100" max="500">
-                	<br>
-                	<p class="h4">Tamaño de tu perro:</p>	
-            		<label for="small" class="h6"><input type="checkbox" id="small" value="chico" class="field-dark">Chico (&lt;5kg)</label>
-            		<label for="medium" class="h6"><input type="checkbox" id="medium" value="mediano" class="p1 border bg-silver circle" >Mediano (&lt;5kg)</label>
-            		<label for="big" class="h6"><input type="checkbox" id="big" value="grande">Grande (&lt;5kg)</label>
-                	<br>
-                	<input id="search_button" type="submit" value="Buscar" class="black btn btn-primary center bg-silver not-rounded border">
-				</form>
-			</div>
+        <div class="container col-12 flex flex-start">
+            <div class=" col-3 left border">
+                <form class="m1 flex flex-column">
+                    <p class="h3">Búsqueda</p>
+                    <label for="since" class="h4">Desde:</label>
+                    <input type="date" id="since" class="field input[type=time] not-rounded">
+                    <br>
+                    <label for="until" class="h4">Hasta:</label>
+                    <input type="date" id="until" class="field not-rounded">
+                    <br>
+                    <label for="where" class="h4">En dónde:</label>
+                    <input type="search" id="where" class="field not-rounded" placeholder="Ciudad o C.P.">
+                    <br>
+                    <label for="price_range" class="h4">Rango de precio:</label>
+                    <div class="h6 m0 py1">
+                        <p class="left m0">$100</p>
+                        <p class="right right-align m0">$500</p>
+                    </div>
+                    <input type="range" id="price_range" min="100" max="500">
+                    <br>
+                    <p class="h4">Tamaño de tu perro:</p>   
+                    <label for="small" class="h6"><input type="checkbox" id="small" value="chico" class="field-dark">Chico (&lt;5kg)</label>
+                    <label for="medium" class="h6"><input type="checkbox" id="medium" value="mediano" class="p1 border bg-silver circle" >Mediano (&lt;5kg)</label>
+                    <label for="big" class="h6"><input type="checkbox" id="big" value="grande">Grande (&lt;5kg)</label>
+                    <br>
+                    <input id="search_button" type="submit" value="Buscar" class="black btn btn-primary center bg-silver not-rounded border">
+                </form>
+            </div>
 
 <!-- MAP -->
-			<div class="container col-9 right">
-				<div class="container col-11">
-					<div class="white border bg-silver py4 center mxn1">MAPA CON PINES DE LOS CUIDADORES</div>
-					<div class="container col-12 flex flex-justify">
-						<div class="col-4 py1 inline-block mxn1"><hr></div>
-						<div class="col-4 h6 inline-block py1 center"><p>Haz click para agrandar el mapa</p></div>
-						<div class="col-4 py1 inline-block mxn1"><hr></div>
-				    </div>
+            <div class="container col-9 right">
+                <div class="container col-11">
+                    <div class="white border bg-silver py4 center mxn1">MAPA CON PINES DE LOS CUIDADORES</div>
+                    <div class="container col-12 flex flex-justify">
+                        <div class="col-4 py1 inline-block mxn1"><hr></div>
+                        <div class="col-4 h6 inline-block py1 center"><p>Haz click para agrandar el mapa</p></div>
+                        <div class="col-4 py1 inline-block mxn1"><hr></div>
+                    </div>
 
 <!-- RESULTS BOX-->
-					<div class="border mt2 flex flex-start mxn1">
-						<div class="container col-2 px1 inline-block">
-							<div class="py1">
-								<div class="picture-box py3 bg-silver border flex flex-center">
-									<img src="user-pictures/ana.png" class="flex-auto">
-								</div>
-							</div>
-							<div class="center mxn1">
-								<p class="h4 m0">4.9</p>
-								<p class="h6 mb1">18 calificaciones</p>
-							</div>
-						</div>
-						<div class="col-10 inline-block m1">
-							<div class="h3 px2 py1 right">
-								<p>$230</p>
-							</div>
-							<p class="h4 bold m0">Anna</p>
-							<p class="h6 bold m0">Soy amante de los perros</p>
-							<p class="gray h6 regular m0">Americana, Guadalajara</p>
-							<p class="h6 less-line-height mt2">Siempre he vivido con perros toda mi vida, no me imagino un día sin tener un perro a mi lado. Vivo en una casa sin jardín, mis perros siempre salen a jugar con su...</p>
-						</div>
-					</div>
+                    <div class="border mt2 flex flex-start mxn1">
+                        <div class="container col-2 px1 inline-block">
+                            <div class="py1">
+                                <div class="picture-box py3 bg-silver border flex flex-center">
+                                    <img src="user-pictures/ana.png" class="flex-auto">
+                                </div>
+                            </div>
+                            <div class="center mxn1">
+                                <p class="h4 m0">4.9</p>
+                                <p class="h6 mb1">18 calificaciones</p>
+                            </div>
+                        </div>
+                        <div class="col-10 inline-block m1">
+                            <div class="h3 px2 py1 right">
+                                <p>$230</p>
+                            </div>
+                            <p class="h4 bold m0">Anna</p>
+                            <p class="h6 bold m0">Soy amante de los perros</p>
+                            <p class="gray h6 regular m0">Americana, Guadalajara</p>
+                            <p class="h6 less-line-height mt2">Siempre he vivido con perros toda mi vida, no me imagino un día sin tener un perro a mi lado. Vivo en una casa sin jardín, mis perros siempre salen a jugar con su...</p>
+                        </div>
+                    </div>
 
 <!-- RESULT BOX -->
-					<div class="border mt2 flex flex-start mxn1">
-						<div class="container col-2 px1 inline-block">
-							<div class="py1">
-								<div class="picture-box py3 bg-silver border flex flex-center">
-									<img src="user-pictures/jose.png" class="flex-auto">
-								</div>
-							</div>
-							<div class="center mxn1">
-								<p class="h4 m0">4.9</p>
-								<p class="h6 mb1">11 calificaciones</p>
-							</div>
-						</div>
-						<div class="col-10 inline-block m1">
-							<div class="h3 px2 py1 right">
-								<p>$200</p>
-							</div>
-							<p class="h4 bold m0">Jose</p>
-							<p class="h6 bold m0">Mi casa es su casa</p>
-							<p class="gray h6 regular m0">Chapultepec Country, Guadalajara</p>
-							<p class="h6 less-line-height mt2">Aunque no tengo perros, siempre me ha gustado lo inteligentes que pueden llegar a ser, he cuidado los perros de mis amigos por 7 años, y creo que les gusta estar más conmigo que con sus dueños.</p>
-						</div>
-					</div>
+                    <div class="border mt2 flex flex-start mxn1">
+                        <div class="container col-2 px1 inline-block">
+                            <div class="py1">
+                                <div class="picture-box py3 bg-silver border flex flex-center">
+                                    <img src="user-pictures/jose.png" class="flex-auto">
+                                </div>
+                            </div>
+                            <div class="center mxn1">
+                                <p class="h4 m0">4.9</p>
+                                <p class="h6 mb1">11 calificaciones</p>
+                            </div>
+                        </div>
+                        <div class="col-10 inline-block m1">
+                            <div class="h3 px2 py1 right">
+                                <p>$200</p>
+                            </div>
+                            <p class="h4 bold m0">Jose</p>
+                            <p class="h6 bold m0">Mi casa es su casa</p>
+                            <p class="gray h6 regular m0">Chapultepec Country, Guadalajara</p>
+                            <p class="h6 less-line-height mt2">Aunque no tengo perros, siempre me ha gustado lo inteligentes que pueden llegar a ser, he cuidado los perros de mis amigos por 7 años, y creo que les gusta estar más conmigo que con sus dueños.</p>
+                        </div>
+                    </div>
 
 <!-- RESULT BOX -->
-					<div class="border mt2 flex flex-start mxn1">
-						<div class="container col-2 px1 inline-block">
-							<div class="py1">
-								<div class="picture-box py3 border flex flex-center">
-									<img src="user-pictures/jonathan.png" class="flex-auto">
-								</div>
-							</div>
-							<div class="center mxn1">
-								<p class="h6 m0">Sin calificaciones</p>
-								<p class="h6 mb1">todavía</p>
-							</div>
-						</div>
-						<div class="col-10 inline-block m1">
-							<div class="h3 px2 py1 right">
-								<p>$300</p>
-							</div>
-							<p class="h4 bold m0">Jonathan</p>
-							<p class="h6 bold m0">Los animales son mi pasión</p>
-							<p class="gray h6 regular m0">Loma Bonita, Zapopan</p>
-							<p class="h6 less-line-height mt2">He sido cuidador de perros por 10 años, soy dueño de una veterinaria y aunque ahíno tenemos pensión de animales, en mi casa tengo bastante espacio para que jueguen. Los saco a pesar 3 vecesal díay les doy entrenamiento mientras los dejan conmigo.</p>
-						</div>
-					</div>
+                    <div class="border mt2 flex flex-start mxn1">
+                        <div class="container col-2 px1 inline-block">
+                            <div class="py1">
+                                <div class="picture-box py3 border flex flex-center">
+                                    <img src="user-pictures/jonathan.png" class="flex-auto">
+                                </div>
+                            </div>
+                            <div class="center mxn1">
+                                <p class="h6 m0">Sin calificaciones</p>
+                                <p class="h6 mb1">todavía</p>
+                            </div>
+                        </div>
+                        <div class="col-10 inline-block m1">
+                            <div class="h3 px2 py1 right">
+                                <p>$300</p>
+                            </div>
+                            <p class="h4 bold m0">Jonathan</p>
+                            <p class="h6 bold m0">Los animales son mi pasión</p>
+                            <p class="gray h6 regular m0">Loma Bonita, Zapopan</p>
+                            <p class="h6 less-line-height mt2">He sido cuidador de perros por 10 años, soy dueño de una veterinaria y aunque ahíno tenemos pensión de animales, en mi casa tengo bastante espacio para que jueguen. Los saco a pesar 3 vecesal díay les doy entrenamiento mientras los dejan conmigo.</p>
+                        </div>
+                    </div>
 
 <!-- PAGINATION -->
-					<div class="container col-8 mt4 mb4 inline-block">
-						<button class="h5 btn border bg-silver p1 col-1 inline-block">1</button>
-						<button class="h5 btn border p1 col-1 inline-block">2</button>
-						<button class="h5 btn border p1 col-1 inline-block">3</button>
-						<button class="h5 btn border p1 col-1 inline-block">4</button>
-						<button class="h5 btn border p1 col-1 inline-block">&gt;</button>
-						<button class="h5 btn border p1 col-1 inline-block">&gt;&gt;</button>
-					</div>
-			    </div>
-			</div>
-		</div>
+                    <div class="container col-8 mt4 mb4 inline-block">
+                        <button class="h5 btn border bg-silver p1 col-1 inline-block">1</button>
+                        <button class="h5 btn border p1 col-1 inline-block">2</button>
+                        <button class="h5 btn border p1 col-1 inline-block">3</button>
+                        <button class="h5 btn border p1 col-1 inline-block">4</button>
+                        <button class="h5 btn border p1 col-1 inline-block">&gt;</button>
+                        <button class="h5 btn border p1 col-1 inline-block">&gt;&gt;</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
 <!-- FOOTER -->
