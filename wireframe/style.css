@@ -29,6 +29,18 @@ hr {
 	height: 29px;
 }
 
+/*.circle-checkbox {
+  background: #999;
+  border-radius: 50%;
+  height: 15px;
+  width: 15px;
+
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  border-radius: 50px;
+  position: relative;
+}*/
+
 input[type=range]{
     -webkit-appearance: none;
 }
